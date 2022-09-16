@@ -37,7 +37,7 @@ public class Product {
 
     // Linked entities
     //
-    @ManyToOne()
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private ApplicationUser owner;

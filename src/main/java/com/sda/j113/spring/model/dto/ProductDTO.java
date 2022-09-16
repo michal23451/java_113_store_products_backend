@@ -14,4 +14,5 @@ public class ProductDTO {
     private Long id;
     private String productName;
     private ProductState productState;
+    private ApplicationUserDTO productOwner;
 }

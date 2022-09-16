@@ -4,6 +4,7 @@ import com.sda.j113.spring.model.Product;
 import com.sda.j113.spring.model.dto.CreateProductRequest;
 import com.sda.j113.spring.model.dto.ProductDTO;
 import com.sda.j113.spring.model.mapper.ProductMapper;
+import com.sda.j113.spring.model.mapper.ProductMapperImpl;
 import com.sda.j113.spring.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 public class ProductServiceImpl implements ProductService{
 
     private final ProductRepository productRepository;
-    private final ProductMapper productMapper;
+    private final ProductMapperImpl productMapper;
 
     @Override
     public ProductDTO addProduct(CreateProductRequest request) {
