@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: system
+    url: jdbc:mysql://localhost/sda_j113_spring?serverTimezone=Europe/Warsaw&createDatabaseIfNotExist=true
+  jpa:
+    hibernate:
+      # liquibase / flyway
+      ddl-auto: update
+#    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
